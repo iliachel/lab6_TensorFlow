@@ -8,7 +8,7 @@ from keras.preprocessing import image
 import os
 
 # 1. Prepare Data
-DATASET_PATH = 'C:/Users/ichel/.cache/kagglehub/datasets/ritikagiridhar/2000-hand-gestures/versions/3'
+DATASET_PATH = 'C:/Users/ichel/.cache/kagglehub/datasets/ritikagiridhar/2000-hand-gestures/versions/3/images'
 IMAGE_SIZE = (96, 96) # MobileNetV2 requires a minimum input size
 
 # ImageDataGenerator with data augmentation
