@@ -6,7 +6,7 @@ from keras._tf_keras.keras.preprocessing import image
 import os
 
 # 1. Prepare Data with Augmentation
-DATASET_PATH = '/home/jules/.cache/kagglehub/datasets/ritikagiridhar/2000-hand-gestures/versions/3/images'
+DATASET_PATH = 'C:\Users\ichel\.cache\kagglehub\datasets\ritikagiridhar\2000-hand-gestures\versions\3'
 
 # ImageDataGenerator with data augmentation
 train_datagen = ImageDataGenerator(
