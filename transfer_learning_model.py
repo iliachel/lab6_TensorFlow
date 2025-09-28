@@ -6,9 +6,10 @@ from keras._tf_keras.keras import layers, models
 import numpy as np
 from keras.preprocessing import image
 import os
+import matplotlib.pyplot as plt
 
 # 1. Prepare Data
-DATASET_PATH = 'C:/Users/ichel/.cache/kagglehub/datasets/ritikagiridhar/2000-hand-gestures/versions/3'
+DATASET_PATH = 'C:/Users/ichel/.cache/kagglehub/datasets/ritikagiridhar/2000-hand-gestures/versions/3/images'
 IMAGE_SIZE = (96, 96) # MobileNetV2 requires a minimum input size
 
 # ImageDataGenerator with data augmentation
@@ -115,6 +116,13 @@ if test_image_path:
     print(f"Using test image: {test_image_path}")
     # Load and prepare the image
     img = image.load_img(test_image_path, target_size=IMAGE_SIZE)
+
+    # Display the image
+    plt.imshow(img)
+    plt.axis('off') # Hide axes
+    plt.title(f"Test Image: {os.path.basename(test_image_path)}")
+    plt.show()
+
     img_array = image.img_to_array(img) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
 
