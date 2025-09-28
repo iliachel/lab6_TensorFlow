@@ -1,18 +1,18 @@
-# Gesture Recognition Lab Summary
+# Итоги лабораторной работы по распознаванию жестов
 
-This document summarizes the results of the gesture recognition lab, where we explored three different deep learning models to classify hand gestures from images.
+В этом документе обобщены результаты лабораторной работы по распознаванию жестов, в ходе которой мы исследовали различные модели глубокого обучения для классификации жестов рук по изображениям.
 
-## Model Performance Comparison
+## Сравнение производительности моделей
 
-Here is a summary of the final validation accuracy for each model:
+Ниже приведена сводка итоговой точности на валидационном наборе данных для каждой модели:
 
-| Model | Validation Accuracy | Key Observations |
+| Модель | Точность на валидации | Ключевые наблюдения |
 | :--- | :--- | :--- |
-| **1. Base CNN** | 34.97% | Suffered from severe **overfitting**. The model memorized the training data but failed to generalize to the validation set. |
-| **2. Augmented CNN** | 33.10% | **Successfully reduced overfitting** by using data augmentation, but the simple architecture was not powerful enough to learn the complex patterns from the augmented data, resulting in slightly lower accuracy. |
-| **3. Improved CNN** | 39.63% | Adding more layers and `Dropout` **improved both accuracy and generalization**. This showed that a more complex custom model could perform better but still had limitations. |
-| **4. Transfer Learning (MobileNetV2)**| **56.88%** | **The most effective approach by a significant margin.** Leveraging a pre-trained model provided powerful features that, after fine-tuning, adapted very well to our specific task and achieved the highest accuracy. |
+| **1. Базовая CNN** | 34.97% | Страдала от сильного **переобучения**. Модель запомнила обучающие данные, но не смогла обобщить их на валидационном наборе. |
+| **2. CNN с аугментацией** | 33.10% | **Успешно уменьшила переобучение** за счет аугментации данных, но простая архитектура оказалась недостаточно мощной для изучения сложных паттернов, что привело к немного более низкой точности. |
+| **3. Улучшенная CNN** | 39.63% | Добавление слоев и `Dropout` **улучшило и точность, и обобщающую способность**. Это показало, что более сложная модель может работать лучше, но все еще имеет ограничения. |
+| **4. Трансферное обучение (MobileNetV2)**| **56.88%** | **Самый эффективный подход со значительным отрывом.** Использование предобученной модели предоставило мощные признаки, которые после дообучения отлично адаптировались к нашей задаче и достигли наивысшей точности. |
 
-## Conclusion
+## Заключение
 
-This lab work clearly demonstrates the power of transfer learning for computer vision tasks. While building a custom model from scratch is an excellent learning exercise, using a pre-trained model like `MobileNetV2` is often the most effective strategy to achieve high performance, especially when working with a relatively small dataset. The pre-trained model provides a strong foundation of learned features that can be quickly adapted to a new, specific task.
+Эта лабораторная работа наглядно демонстрирует мощь трансферного обучения для задач компьютерного зрения. Хотя создание собственной модели с нуля является отличным упражнением, использование предобученной модели, такой как `MobileNetV2`, часто является наиболее эффективной стратегией для достижения высокой производительности, особенно при работе с относительно небольшим набором данных. Предобученная модель обеспечивает прочную основу из изученных признаков, которые можно быстро адаптировать к новой, конкретной задаче.
