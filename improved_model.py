@@ -1,7 +1,8 @@
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow import keras
+from keras._tf_keras.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
-from tensorflow.keras.preprocessing import image
+from keras._tf_keras.keras.preprocessing import image
 import os
 
 # 1. Prepare Data with Augmentation

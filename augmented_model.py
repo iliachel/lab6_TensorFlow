@@ -1,11 +1,12 @@
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow import keras
+from keras._tf_keras.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
-from tensorflow.keras.preprocessing import image
+from keras._tf_keras.keras.preprocessing import image
 import os
 
 # 1. Prepare Data with Augmentation
-DATASET_PATH = '/home/jules/.cache/kagglehub/datasets/ritikagiridhar/2000-hand-gestures/versions/3/images'
+DATASET_PATH = 'C:\Users\ichel\.cache\kagglehub\datasets\ritikagiridhar\2000-hand-gestures\versions\3'
 
 # ImageDataGenerator with data augmentation
 train_datagen = ImageDataGenerator(

@@ -1,9 +1,10 @@
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.applications import MobileNetV2
-from tensorflow.keras import layers, models
+from tensorflow import keras
+from keras._tf_keras.keras.preprocessing.image import ImageDataGenerator
+from keras._tf_keras.keras.applications import MobileNetV2
+from keras._tf_keras.keras import layers, models
 import numpy as np
-from tensorflow.keras.preprocessing import image
+from keras.preprocessing import image
 import os
 
 # 1. Prepare Data
