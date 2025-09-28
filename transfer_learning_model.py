@@ -101,7 +101,7 @@ history_fine = model.fit(train_data,
 
 # 5. Evaluate Model
 loss, accuracy = model.evaluate(val_data)
-print(f'Точность модели с трансферным обучением: {accuracy * 100:.2f}%')
+print(f'Tochnost modeli s transfernym obucheniem: {accuracy * 100:.2f}%')
 
 # 6. Use Model for Prediction
 # Find a test image
@@ -127,7 +127,7 @@ if test_image_path:
     class_names = {v: k for k, v in class_indices.items()}
     predicted_class_name = class_names[predicted_class_index]
 
-    print(f'Предсказанный класс (индекс): {predicted_class_index}')
-    print(f'Предсказанный класс (имя): {predicted_class_name}')
+    print(f'Predskazannyj klass (indeks): {predicted_class_index}')
+    print(f'Predskazannyj klass (imya): {predicted_class_name}')
 else:
-    print("Не удалось найти тестовое изображение.")
+    print("Ne udalos' najti testovoe izobrazhenie.")
